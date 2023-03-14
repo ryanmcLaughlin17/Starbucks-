@@ -30,7 +30,6 @@ body {
 
 .header__title {
     font-weight: bold;
-    font size: 18px;
 }
 
 .mission_statement__image {
@@ -111,3 +110,73 @@ body {
     background-color:rgb(1,108,64); 
     color: white;
 }
+
+.partner_cards {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-right: -16px;
+}
+
+.partner_card {
+  width: calc(25% - 16px);
+  background-color: rgb(1,108,64);
+  border-radius: 14px;
+  border: 10px solid rgb(1,108,64);
+  padding: 14px;
+}
+
+.partner_card__image {
+  width: 100%;
+  border-radius: 15px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.partner_card__title {
+  margin-top: 16px;
+  color: white;
+  font-size: 20px;
+}
+
+.partner_card__button {
+  margin-top: 32px;
+  background-color: rgb(28, 134, 2);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 12px 0;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.2s ease background-color, 0.2s ease color;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background-color: rgb(6, 198, 35);
+  color: white;
+}
+
+.partner_card__button:hover {
+  background-color: rgb(6, 198, 35);
+  color: white;
+}
+
+.home_button{
+  margin-top: 32px;
+  background-color: rgb(28, 134, 2);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 12px 0;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.2s ease background-color, 0.2s ease color;
+  cursor: pointer;
+}
+
+

@@ -2,11 +2,6 @@
 {% load static %}
 
 {% block content %}
-<footer class="footer">
-    <p>Contact us:  Address: 290 Castlebank Street, Glasgow, G11 6EX</p>
-    <p>Telephone: 0141 473 4255</p>
-    <p>Email: s65720@retail.starbucks.com</p>
-    </footer>
 <section class="mission_statement">
 <div>
 <img class="mission_statement__image" src="https://images.pexels.com/photos/303324/pexels-photo-303324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Starbucks Store">
@@ -20,17 +15,17 @@
  <li class="card">
     <h2 class="card__title">Partner of the Quarter - Q1</h2>
     <img class="card__image" src="https://images.pexels.com/photos/4349736/pexels-photo-4349736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Niamh Condron">
-    <button class="card__button">Niamh's Story!</button>
+    <a href="{% url 'potq_home' %}"><button class="home_button" type="button">Niamh's Story</button></a>
 <li class="card">
-    <h2 class="card__title">Partner of the Quarter - Q2</h2>
+    <h2 class="card__title">We're Hiring!</h2>
     <img class="card__image" src=https://images.pexels.com/photos/5409658/pexels-photo-5409658.jpeg?auto=compress&cs=tinysrgb&w=800 alt="Barista">
-    <button class="card__button">TBC...</button>
+    <button class="card__button">Apply Now!</button>
 <li class="card">
-    <h2 class="card__title">What's new?</h2>
+    <h2 class="card__title">Our Favourites?</h2>
     <img class="card__image" src="https://images.pexels.com/photos/704748/pexels-photo-704748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Hearts">
-    <button class="card__button">View Our Menu!</button>
+    <button class="card__button">Your next purchase?</button>
 <li class="card">
-    <h2 class="card__title">Upcoming events?</h2>
+    <h2 class="card__title">Keep up to date!</h2>
     <img class="card__image" src=https://images.pexels.com/photos/4350198/pexels-photo-4350198.jpeg?auto=compress&cs=tinysrgb&w=800 alt="Baristas">
-    <button class="card__button">Find out more...</button>
+    <button class="card__button">Follow on Instagram!</button>
 {% endblock content %}
