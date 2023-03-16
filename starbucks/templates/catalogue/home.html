@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block content %}
 <section class="mission_statement">
 <div>
@@ -10,7 +9,12 @@
 </p>
 </div>
 </section>
-<nav class="nav">
+<footer class="footer">
+    <p>Contact us:  Address: 290 Castlebank Street, Glasgow, G11 6EX</p>
+    <p>Telephone: 0141 473 4255</p>
+    <p>Email: s65720@retail.starbucks.com</p>
+    </footer>
+<nav>
  <ul class="cards">
  <li class="card">
     <h2 class="card__title">Partner of the Quarter - Q1</h2>
@@ -19,13 +23,13 @@
 <li class="card">
     <h2 class="card__title">We're Hiring!</h2>
     <img class="card__image" src=https://images.pexels.com/photos/5409658/pexels-photo-5409658.jpeg?auto=compress&cs=tinysrgb&w=800 alt="Barista">
-    <button class="card__button">Apply Now!</button>
+    <a href="https://www.starbucksemeacareers.com/en"><button class="home_button" type="button">Apply Now</button></a>
 <li class="card">
     <h2 class="card__title">Our Favourites?</h2>
     <img class="card__image" src="https://images.pexels.com/photos/704748/pexels-photo-704748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Hearts">
-    <button class="card__button">Your next purchase?</button>
+    <a href="#"><button class="home_button" type="button">Your Next Purchase?</button></a>
 <li class="card">
     <h2 class="card__title">Keep up to date!</h2>
     <img class="card__image" src=https://images.pexels.com/photos/4350198/pexels-photo-4350198.jpeg?auto=compress&cs=tinysrgb&w=800 alt="Baristas">
-    <button class="card__button">Follow on Instagram!</button>
+    <a href="https://instgram.com/starbuckspartickdrivethru?igshid=YmMyMTA2M2Y="><button class="home_button" type="button">Follow on Instagram</button></a>
 {% endblock content %}

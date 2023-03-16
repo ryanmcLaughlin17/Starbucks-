@@ -5,18 +5,18 @@
     <li class="partner_card">
     <h2 class="partner_card__title">Management</h2>
     <img class="partner_card__image" src= "https://images.pexels.com/photos/6205469/pexels-photo-6205469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Starbucks Manager">
-    <button class="partner_card__button">Meet the Managers...</button>
+    <a href="{% url 'management_home' %}"><button class="home_button" type="button">Meet the Managers...</button></a>
     <li class="partner_card">
     <h2 class="partner_card__title">Baristas</h2>
     <img class="partner_card__image" src= "https://images.pexels.com/photos/4353570/pexels-photo-4353570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Starbucks Barista">
-    <button class="partner_card__button">Meet the Baristas...</button>
+    <a href="{% url 'barista_home' %}"><button class="home_button" type="button">Meet the Baristas...</button></a>
     <li class="partner_card">
     <h2 class="partner_card__title">Partner of the Quarter</h2>
     <img class="partner_card__image" src= "https://images.pexels.com/photos/5409658/pexels-photo-5409658.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Starbucks Partner of the Quarter">
-    <button class="partner_card__button">Celebrate our Winners...</button>
+    <a href="{% url 'potq_home' %}"><button class="home_button" type="button">Celebrate our Winners...</button></a>
     <li class="partner_card">
         <h2 class="partner_card__title">Coffee Masters</h2>
         <img class="partner_card__image" src= "https://images.pexels.com/photos/5246155/pexels-photo-5246155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Coffee Master">
-        <button class="partner_card__button">The Professionals!</button>
+        <a href="{% url 'coffee_master_home' %}"><button class="home_button" type="button">The Latte Artists!</button></a>
 </ul>
 {% endblock content %}

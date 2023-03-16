@@ -1,5 +1,29 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<h1>Management</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management</title>
+</head>
+<body>
+<h1 class="management__title">Management</h1>
+{% for manager in manager %}
+<ul class="management__cards">
+    <li class="management__card">
+        <h2 class="management__card-title">{{ manager.name }}</h2>
+        <img class="management__card-image" src="https://images.pexels.com/photos/4349736/pexels-photo-4349736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Barista">
+        <p class="management__card-info">{{ manager.role }}</p>
+        <p class="management__card-info">{{ manager.partner_number }}</p>
+    </li>
+</ul>
+<nav class="facts">
+<p class="fact">Fun Fact</p>
+</nav>
+{% endfor %}
+</body>
+</html>
 {% endblock content %}
