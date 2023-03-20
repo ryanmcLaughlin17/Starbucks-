@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fvaourites</title>
+</head>
+<body>
+<h1 class="favourites__title">Favourites</h1>
+<h2 class="favourites__title-02">We asked our Baristas to share their favourite drinks with you...</h2>
+{% for review in review %}
+<ul class="barista__cards">
+    <li class="favourites__card">
+        <h2 class="favourites__card-title">{{ review.drink_name }}</h2>
+        <p class="favourites__card-recipes">{{ review.customization }}</p>
+    </li>
+</ul>
+{% endfor %}
+<footer class="favourites__footer">
+    <p>Contact us:  Address: 290 Castlebank Street, Glasgow, G11 6EX</p>
+    <p>Telephone: 0141 473 4255</p>
+    <p>Email: s65720@retail.starbucks.com</p></footer>
+</body>
+</html>
+{% endblock content %}

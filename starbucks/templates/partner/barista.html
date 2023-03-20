@@ -10,16 +10,26 @@
     <title>Baristas</title>
 </head>
 <body>
-    <h1>Baristas</h1>
-    <div class="baristas">
-        {% for barista in barista %}
-            <div class="barista">
-                <h2>{{ barista.name }}</h2>
-                <p>{{ barista.role }} </p>
-                <p>{{ barista.number }}</p>
-            </div>
-        {% endfor %}
-    </div>
+<h1 class="barista__title">Baristas</h1>
+{% for barista in barista %}
+<ul class="barista__cards">
+    <li class="barista__card">
+        <h2 class="barista__card-title">{{ barista.name }}</h2>
+        <img class="barista__card-image" src="https://images.pexels.com/photos/4349736/pexels-photo-4349736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Barista">
+        <p class="barista__card-info">{{ barista.role }}</p>
+        <p class="barista__card-info">{{ barista.partner_number }}</p>
+    </li>
+</ul>
+<nav class="facts">
+<p class="fact">Fun Fact</p>
+</nav>
+<p class="fact__details">{{ barista.fact }}</p>
+{% endfor %}
+<footer class="barista_footer">
+    <p>Contact us:  Address: 290 Castlebank Street, Glasgow, G11 6EX</p>
+    <p>Telephone: 0141 473 4255</p>
+    <p>Email: s65720@retail.starbucks.com</p>
+    </footer>
 </body>
 </html>
 {% endblock content %}

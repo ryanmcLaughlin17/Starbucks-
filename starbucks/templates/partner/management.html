@@ -14,16 +14,23 @@
 {% for manager in manager %}
 <ul class="management__cards">
     <li class="management__card">
-        <h2 class="management__card-title">{{ manager.name }}</h2>
-        <img class="management__card-image" src="https://images.pexels.com/photos/4349736/pexels-photo-4349736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Barista">
+        <h2 class="management__card-title">{{ manager.partner_name }}</h2>
+        <img class="management__card-image" src="https://images.pexels.com/photos/4349736/pexels-photo-4349736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Manager">
         <p class="management__card-info">{{ manager.role }}</p>
         <p class="management__card-info">{{ manager.partner_number }}</p>
     </li>
 </ul>
 <nav class="facts">
 <p class="fact">Fun Fact</p>
+
 </nav>
+<p class="fact__details">{{ manager.fact }}</p>
 {% endfor %}
+<footer class="management_footer">
+    <p>Contact us:  Address: 290 Castlebank Street, Glasgow, G11 6EX</p>
+    <p>Telephone: 0141 473 4255</p>
+    <p>Email: s65720@retail.starbucks.com</p>
+    </footer>
 </body>
 </html>
 {% endblock content %}

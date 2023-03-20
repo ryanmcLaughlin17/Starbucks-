@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<h1 class="partners__title">Partners</h1>
 <ul class="partner_cards">
     <li class="partner_card">
     <h2 class="partner_card__title">Management</h2>
@@ -19,4 +20,9 @@
         <img class="partner_card__image" src= "https://images.pexels.com/photos/5246155/pexels-photo-5246155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Coffee Master">
         <a href="{% url 'coffee_master_home' %}"><button class="home_button" type="button">The Latte Artists!</button></a>
 </ul>
+<footer class="partner_footer">
+    <p>Contact us:  Address: 290 Castlebank Street, Glasgow, G11 6EX</p>
+    <p>Telephone: 0141 473 4255</p>
+    <p>Email: s65720@retail.starbucks.com</p>
+    </footer>
 {% endblock content %}

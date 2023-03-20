@@ -14,14 +14,13 @@
     <spam class="header__title">Starbucks - Castlebank Street - 65720</spam>
     <nav>
     <ul class="nav__list">
-        <li class="nav__item"><a href="{% url 'home' %}">Home</a></li>
-        <li class="nav__item"><a href="{% url 'partner_home' %}">Partners</a></li>
-        <li class="nav__item"><a href="https://www.starbucks.com/menu">Menu</a></li>
+        <li class="nav__item"><a href="{% url 'home' %}"><button class="base_button">Home</button></a></li>
+        <li class="nav__item"><a href="{% url 'partner_home' %}"><button class="base_button">Partners</button></a></li>
+        <li class="nav__item"><a href="https://www.starbucks.com/menu"> <button class="base_button">Menu</button></a></li>
     </ul>
 </nav>
 </div>
 </header>
-<hr>
 </body>
 </html>
 {% block content %}

@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from .models import Barista, Manager
 # Create your views here.
-
 def partner(request):
     return render(request, 'partner/partner.html')
 

@@ -13,9 +13,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 14px;
     background-color: rgb(1,108,64);
     color: white;
+}
+
+.base_button{
+  padding: 8px;
+  border-radius: 10px;
+  color: white;
+  background-color:rgb(28, 134, 2);
+  font-weight: bold;
+  transition: 0.2s ease background-color, 0.2s ease color;
+  cursor: pointer;
 }
 
 .nav__list {
@@ -32,12 +42,13 @@ body {
 }
 
 .mission_statement__image {
+    margin-top: 10px;
+    margin-left: 520px;
     background-color: rgb(1,108,64);
     border: 10px solid rgb(1,108,64);
     display: block;
     width: 400px;
     height: auto;
-    margin: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -102,12 +113,10 @@ body {
   }
   
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 4rem;
-    background-color:rgb(1,108,64); 
-    color: white;
+  width: 100%;
+  background-color: rgb(1,108,64);
+  color: white;
+  margin-top: 20px;
 }
 
 .partner_cards {
@@ -181,7 +190,8 @@ body {
 .management__title{
   width: 400px;
   font-weight: bold;
-  margin: auto;
+  margin-top: 10px;
+  margin-left: 550px;
   color: rgb(1,108,64);
   border: 8px solid rgb(1,108,64);
   border-radius: 10px;
@@ -242,5 +252,259 @@ float: right;
 .fact{
   text-align:center;
   background-color: rgb(1,108,64);
-  color: white
+  color: white;
+  text-decoration-line: underline;
 }
+
+.fact__details{
+  text-align:center;
+  color: white;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 16px;
+  height: 227.5px;
+  width: 413.5px;
+  padding: 7px;
+  margin-right: 450px;
+  margin-left: 16px;
+  margin-top: -300px;
+  float: right;
+}
+
+.barista__title{
+  width: 400px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 550px;
+  color: rgb(1,108,64);
+  border: 8px solid rgb(1,108,64);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.barista__cards {
+  flex-direction: row;
+  margin-top: 20px;
+  list-style: none;
+  gap: 16px;
+  margin-right: -16px;
+  margin-left: 16px;
+}
+
+.barista__card {
+  height: 460px;
+  width: 427px;
+  background-color: rgb(1,108,64);
+  border-radius: 14px;
+  border: 10px solid rgb(1,108,64);
+  padding: 14px;
+}
+
+.barista__card-title{
+  height: 67px;
+  width: 343px;
+  color: white;
+}
+
+.barista__card-image {
+  height: 255px;
+  width: 302px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.barista__card-info{
+  color: white;
+}
+
+.potq_fact{
+  color: white;
+}
+
+.potq_card__image{
+  height: 255px;
+  width: 302px;
+  border-top: 100px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.potq_card {
+  width: calc(25% - 16px);
+  background-color: rgb(1,108,64);
+  border-radius: 14px;
+  border: 10px solid rgb(1,108,64);
+  padding: 14px;
+}
+
+.name {
+    color: white;
+    text-decoration-line: underline;
+}
+
+.coffee-master__title{
+  width: 400px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 520px;
+  color: rgb(1,108,64);
+  border: 8px solid rgb(1,108,64);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  text-align: center;
+}
+
+.coffee-master__image {
+  background-color: rgb(1,108,64);
+  border: 10px solid rgb(1,108,64);
+  display: block;
+  width: 400px;
+  height: 350px;
+  margin: auto;
+}
+
+.coffee-master__text{
+  width: 400px;
+  font-weight: bold;
+  margin: auto;
+  color: rgb(1,108,64);
+  border: 10px solid rgb(1,108,64);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.coffee-master__image-02 {
+  background-color: rgb(1,108,64);
+  border: 10px solid rgb(1,108,64);
+  width: 400px;
+  height: 350px;
+  margin-right: 66px;
+  border-radius: 10px;
+  margin-top: -300px;
+  margin-left: 45px;
+  float: left;
+}
+
+.coffee-master__image-03 {
+  background-color: rgb(1,108,64);
+  border: 10px solid rgb(1,108,64);
+  width: 400px;
+  height: 350px;
+  border-radius: 10px;
+  margin-top: -300px;
+  margin-right: 45px;
+  float: right;
+}
+
+.barista_footer {
+  width: 100%;
+  background-color: rgb(1,108,64);
+  color: white;
+  margin-top: 20px;
+}
+
+.partner_footer{
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(1,108,64);
+  color: white;
+  width: 100%;
+}
+
+.management_footer {
+  width: 100%;
+  background-color: rgb(1,108,64);
+  color: white;
+  margin-top: 20px;
+}
+
+.potq_footer{
+  width: 100%;
+  background-color: rgb(1,108,64);
+  color: white;
+  margin-top: 20px;
+}
+
+.coffee-master_footer{
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(1,108,64);
+  color: white;
+  width: 100%;
+}
+
+.partners__title{
+  width: 400px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 550px;
+  color: rgb(1,108,64);
+  border: 8px solid rgb(1,108,64);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.favourites__title{
+  width: 400px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 550px;
+  color: rgb(1,108,64);
+  border: 8px solid rgb(1,108,64);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+.favourites__title-02{
+  width: 400px;
+  font-weight: bold;
+  margin-left: 550px;
+  color: white;
+  background-color: rgb(1,108,64);;
+  border: 10px solid rgb(1,108,64);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+
+.favourites__footer{
+  width: 100%;
+  background-color: rgb(1,108,64);
+  color: white;
+  margin-top: 20px;
+}
+
+.favourites__card-title{
+  color: white;
+  text-decoration-line: underline;
+}
+
+.favourites__card-info{
+  color: white;
+}
+
+.favourites__card-recipes{
+  color: white;
+}
+
+.favourites__card {
+  margin-top: 10px;
+  height: 250px;
+  width: 350px;
+  background-color: rgb(1,108,64);
+  border-radius: 14px;
+  border: 10px solid rgb(1,108,64);
+  padding: 14px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.favourite__image{
+  height: 255px;
+  width: 302px;
+  object-fit: cover;
+  margin-left: 500px;
+}
+
+
