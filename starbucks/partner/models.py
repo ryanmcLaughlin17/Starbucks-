@@ -6,6 +6,7 @@ class Barista(models.Model):
     role = models.CharField(max_length=25)
     partner_number = models.IntegerField()
     fact =  models.TextField(max_length=250, null=True)
+    barista_image = models.ImageField(upload_to="images",default='https://miro.medium.com/v2/resize:fit:720/format:webp/1*EN0fyh1x46dxsc-w20lRfw.jpeg')
 
     def __str__(self):
         return self.name + ' - ' + self.role
@@ -15,6 +16,7 @@ class Manager(models.Model):
     role = models.CharField(max_length=25)
     partner_number = models.IntegerField()
     fact =  models.TextField(max_length=250, null=True)
+    manager_image = models.ImageField(upload_to="images",default='https://miro.medium.com/v2/resize:fit:720/format:webp/1*EN0fyh1x46dxsc-w20lRfw.jpeg')
    
     def __str__(self):
         return self.name + ' - ' + self.role

@@ -222,13 +222,6 @@ body {
   color: white;
 }
 
-.management__card-image {
-  height: 255px;
-  width: 302px;
-  border-radius: 15px;
-  object-fit: cover;
-}
-
 .management__card-info{
   color: white;
 }
@@ -476,8 +469,9 @@ float: right;
 }
 
 .favourites__card-title{
+  height: 67px;
+  width: 343px;
   color: white;
-  text-decoration-line: underline;
 }
 
 .favourites__card-info{
@@ -489,22 +483,53 @@ float: right;
 }
 
 .favourites__card {
-  margin-top: 10px;
-  height: 250px;
-  width: 350px;
+  height: 460px;
+  width: 427px;
   background-color: rgb(1,108,64);
   border-radius: 14px;
   border: 10px solid rgb(1,108,64);
   padding: 14px;
-  margin-left: 10px;
-  margin-top: 30px;
 }
 
-.favourite__image{
+.favourites__card-title-02{
+  color: white;
+  text-decoration-line: underline;
+}
+
+.drink_image{
   height: 255px;
   width: 302px;
+  border-radius: 15px;
   object-fit: cover;
-  margin-left: 500px;
 }
 
+.favourites__recommender{
+  color: white;
+}
+
+.favourites__customization{
+  color: white;
+  gap: 16px;
+  height: 227.5px;
+  width: 413.5px;
+  padding: 7px;
+  margin-right: 450px;
+  margin-left: 16px;
+  margin-top: -300px;
+  float: right;
+}
+
+.management__image{
+  height: 300px;
+  width: 302px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.barista__image{
+  height: 300px;
+  width: 302px;
+  border-radius: 15px;
+  object-fit: cover;
+}
 

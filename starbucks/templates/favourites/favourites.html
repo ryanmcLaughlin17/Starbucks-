@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fvaourites</title>
+    <title>Favourites</title>
 </head>
 <body>
 <h1 class="favourites__title">Favourites</h1>
@@ -16,9 +16,13 @@
 <ul class="barista__cards">
     <li class="favourites__card">
         <h2 class="favourites__card-title">{{ review.drink_name }}</h2>
-        <p class="favourites__card-recipes">{{ review.customization }}</p>
-    </li>
+        <img class="drink_image" src="{{ review.drink_image.url }}" alt="Mocha">
+        <p class="favourites__recommender">Recommended by: {{ review.partner_name }}</p>
 </ul>
+<nav class="facts">
+    <p class="fact">What to order...</p>
+    </nav>
+    <p class="favourites__customization">{{ review.customization }}</p>
 {% endfor %}
 <footer class="favourites__footer">
     <p>Contact us:  Address: 290 Castlebank Street, Glasgow, G11 6EX</p>

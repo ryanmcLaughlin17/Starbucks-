@@ -15,7 +15,7 @@
 <ul class="barista__cards">
     <li class="barista__card">
         <h2 class="barista__card-title">{{ barista.name }}</h2>
-        <img class="barista__card-image" src="https://images.pexels.com/photos/4349736/pexels-photo-4349736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Barista">
+        <img class="barista__image" src="{{ barista.barista_image.url }}" alt="Barista">
         <p class="barista__card-info">{{ barista.role }}</p>
         <p class="barista__card-info">{{ barista.partner_number }}</p>
     </li>
