@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="wrap-content">
+  <div class="card-background half-width">
+    <section class="login__card">
+      <h2 class="login__header">Log in:</h2>
+    </section>
+    <section class="login__card-02">
+      {% if form.errors %}
+        <div class="form-errors">
+        {% for input,errors in form.errors.items %}
+          <ul>
+            {% for error in errors %}
+              <li>{{error}}</li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+        </div>
+      {% endif %}
+
+      <form action="{% url 'accounts_login' %}" method="POST" class="login-form page-form">
+        {% csrf_token %}
+
+        <div class="input-group">
+          <label class="username" for="username">Username:</label>
+          <input required type="text" name="username" class="username_box">
+        </div>
+
+        <div class="input-group">
+          <label class="password" for="password">Password:</label>
+          <input required type="password" name="password" class="password_box">
+        </div>
+
+        <input type="submit" value="Submit" class="submit" />
+        <input type="hidden" name="next" value="{{ next }}" />
+      </form>
+    </section>
+  </div>
+  <footer class="login_footer">
+    <p>Contact us:  Address: 290 Castlebank Street, Glasgow, G11 6EX</p>
+    <p>Telephone: 0141 473 4255</p>
+    <p>Email: s65720@retail.starbucks.com</p>
+  </footer>
+</main>
+{% endblock %}

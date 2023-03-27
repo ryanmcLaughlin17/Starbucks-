@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -11,34 +12,87 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 14px;
+    padding: 16px;
     background-color: rgb(1,108,64);
     color: white;
 }
 
-.base_button{
-  padding: 8px;
-  border-radius: 10px;
-  color: white;
-  background-color:rgb(28, 134, 2);
-  font-weight: bold;
-  transition: 0.2s ease background-color, 0.2s ease color;
-  cursor: pointer;
-}
-
 .nav__list {
-    display: flex;
-    list-style-type: none;
+  display: flex;
+  list-style-type: none;
+  margin-left: 115px;
+  color: white;
+  text-decoration: none; 
+  font-size: 16px;
 }
 
 .nav__item {
-    margin-left: 18px;   
+    margin-left: 18px;
+    color: white;
+    text-decoration: none;   
 }
 
 .header__title {
     font-weight: bold;
+    font-size: 24px;
+}
+
+.auth-nav{
+  display: flex;
+  list-style-type: none;
+  margin-left: 475px;
+  color: white;
+  text-decoration: none; 
+  font-size: 16px;
+}
+
+.login_details{
+  color: white;
+  text-decoration-line: none;
+}
+
+.logout_details{
+  color: white;
+  text-decoration-line: none;
+  text-align: center;
+}
+
+.wrap-content {
+  align-items: flex-start;
+  flex-grow: 0;
+}
+
+.card-background {
+  background-color: var(--gray-light);
+  padding: 0.5rem;
+  box-shadow: var(--shadow);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-controls > .input-group > label {
+  margin-right: 0.5rem;
+}
+
+.page-form > .input-group > label {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.page-form .button {
+  margin: 0.5rem;
+}
+
+.page-form > .input-group > input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+input[type="text"], input[type="password"], textarea {
+  padding: 0.5rem;
+  background-color: var(--gray);
+  border-radius: 0.5rem;
 }
 
 .mission_statement__image {
@@ -497,7 +551,7 @@ float: right;
 }
 
 .drink_image{
-  height: 255px;
+  height: 325px;
   width: 302px;
   border-radius: 15px;
   object-fit: cover;
@@ -533,3 +587,131 @@ float: right;
   object-fit: cover;
 }
 
+.login__header{
+  color: white;
+}
+
+.login__card {
+  width: calc(25% - 16px);
+  background-color: rgb(1,108,64);
+  border-top-right-radius: 14px;
+  border-top-left-radius: 14px;
+  border: 10px solid rgb(1,108,64);
+  padding: 14px;
+}
+
+.login__card-02 {
+  width: calc(25% - 16px);
+  background-color: rgb(1,108,64);
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border: 10px solid rgb(1,108,64);
+  padding: 14px;
+}
+
+.username{
+color: white;
+}
+
+.password{
+color: white;
+}
+
+.submit{
+margin-top: 32px;
+background-color: rgb(28, 134, 2);
+color: white;
+border: none;
+text-transform: uppercase;
+width: 100%;
+padding: 12px 0;
+font-weight: bold;
+border-radius: 5px;
+transition: 0.2s ease background-color, 0.2s ease color;
+cursor: pointer;
+}
+
+.login_footer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(1,108,64);
+  color: white;
+  width: 100%;
+}
+
+.register__header{
+  color: white;
+}
+
+
+.register__card {
+  width: calc(30% - 16px);
+  background-color: rgb(1,108,64);
+  border-top-right-radius: 14px;
+  border-top-left-radius: 14px;
+  border: 10px solid rgb(1,108,64);
+  padding: 14px;
+}
+
+.register__card-02 {
+  width: calc(30% - 16px);
+  background-color: rgb(1,108,64);
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border: 10px solid rgb(1,108,64);
+  padding: 14px;
+}
+
+.confirm_password{
+  color: white;
+}
+
+.register{
+  margin-top: 32px;
+  background-color: rgb(28, 134, 2);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 12px 0;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.2s ease background-color, 0.2s ease color;
+  cursor: pointer;
+  }
+
+.vote__button{
+  margin-top: 32px;
+  align-self: center;
+  background-color: rgb(28, 134, 2); ;
+  color: white;
+  border: 8px solid rgb(1,108,64);
+  text-transform: uppercase;
+  padding: 12px 0;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.2s ease background-color, 0.2s ease color;
+  cursor: pointer;
+  margin-left: 670px;
+  width: 100px;
+}
+
+.vote__button:hover{
+  background-color:rgb(1,108,64);
+}
+
+.home_button:hover{
+  background-color:rgb(1,108,64);
+}
+
+.potq__title{
+  width: 400px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 550px;
+  color: rgb(1,108,64);
+  border: 8px solid rgb(1,108,64);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}

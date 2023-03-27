@@ -14,11 +14,21 @@
     <spam class="header__title">Starbucks - Castlebank Street - 65720</spam>
     <nav>
     <ul class="nav__list">
-        <li class="nav__item"><a href="{% url 'home' %}"><button class="base_button">Home</button></a></li>
-        <li class="nav__item"><a href="{% url 'partner_home' %}"><button class="base_button">Partners</button></a></li>
-        <li class="nav__item"><a href="https://www.starbucks.com/menu"> <button class="base_button">Menu</button></a></li>
+        <li><a class="nav__item" href="{% url 'home' %}">Home</a></li>
+        <li><a class="nav__item" href="{% url 'partner_home' %}">Partners</a></li>
+        <li><a class="nav__item" href="https://www.starbucks.com/menu">Menu</a></li>
     </ul>
 </nav>
+<nav class="auth-nav">
+    {% if user.is_authenticated %}
+      <span>Logged in as: <span class="logged-in-username">{{ user.username }}</span></span>
+      <a class="logout_details" href="{% url 'accounts_logout' %}">Log out</a>
+    {% else %}
+      <a class="login_details" href="{% url 'accounts_login' %}">Log In</a>
+      <span> | </span>
+      <a class="login_details" href="{% url 'accounts_register' %}">Register</a>
+    {% endif %}
+  </nav>
 </div>
 </header>
 </body>

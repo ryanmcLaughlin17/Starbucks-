@@ -18,4 +18,3 @@ def potq(request):
 def coffee_master(request):
     return render(request, 'partner/coffee_master.html')
 
-

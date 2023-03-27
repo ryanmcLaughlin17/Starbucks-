@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="wrap-content">
+  <div class="card-background half-width">
+    <section class="register__card">
+      <h2 class="register__header">Register</h2>
+    </section>
+
+    <section class="register__card-02">
+      {% if form.errors %}
+        <div class="form-errors">
+        {% for input,errors in form.errors.items %}
+          <ul>
+            {% for error in errors %}
+              <li>{{error}}</li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+        </div>
+      {% endif %}
+
+      <form action="{% url 'accounts_register' %}" method="POST" class="page-form">
+        {% csrf_token %}
+
+        <div class="input-group">
+          <label class="username
+          " for="username">Username:</label>
+          <input required type="text" name="username" id="username">
+        </div>
+
+        <div class="input-group">
+          <label class="password" for="password">Password:</label>
+          <input required type="password" name="password1" id="password">
+        </div>
+
+        <div class="input-group">
+          <label class="confirm_password" for="confirm-password">Confirm Password:</label>
+          <input required type="password" name="password2" id="confirm-password">
+        </div>
+
+        <input type="submit" value="Register" class="register" />
+        <input type="hidden" name="next" value="{{ next }}" />
+      </form>
+    </section>
+  </div>
+  <footer class="login_footer">
+    <p>Contact us:  Address: 290 Castlebank Street, Glasgow, G11 6EX</p>
+    <p>Telephone: 0141 473 4255</p>
+    <p>Email: s65720@retail.starbucks.com</p>
+  </footer>
+</main>
+{% endblock %}
